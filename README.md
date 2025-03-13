@@ -173,7 +173,57 @@ scene_understanding/
 
 ## Examples
 
-### Example 1: Kitchen Scene
+### Example 1: Urban Street Scene (R2.jpg)
+
+![Urban Street Scene](scene_understanding/data/input/R2.jpg)
+
+Input: An urban street scene with buildings, vehicles, and street elements.
+
+Output:
+- Object detection with bounding boxes:
+  
+  ![Object Detection](scene_understanding/data/output/R2_bbox.png)
+  
+- Scene graph visualization:
+  
+  ![Scene Graph](scene_understanding/data/output/R2_graph.png)
+  
+- Scene graph with image overlay:
+  
+  ![Scene Graph with Image](scene_understanding/data/output/R2_graph_with_image.png)
+
+- Detected objects: cars, buildings, street lamps, traffic signs
+- Extracted relationships:
+  - (cars, parked on, street)
+  - (buildings, line, street)
+  - (street lamps, along, sidewalk)
+
+### Example 2: Indoor Scene (R.jpg)
+
+![Indoor Scene](scene_understanding/data/input/R.jpg)
+
+Input: An indoor scene showing furniture and room elements.
+
+Output:
+- Object detection with bounding boxes:
+  
+  ![Object Detection](scene_understanding/data/output/R_bbox.png)
+  
+- Scene graph visualization:
+  
+  ![Scene Graph](scene_understanding/data/output/R_graph.png)
+  
+- Scene graph with image overlay:
+  
+  ![Scene Graph with Image](scene_understanding/data/output/R_graph_with_image.png)
+
+- Detected objects: bed, chair, scene elements
+- Extracted relationships:
+  - (scene, contains, bed)
+  - (scene, contains, chair)
+  - (bed, left of, chair)
+
+### Example 3: Kitchen Scene
 
 ![Kitchen Scene](examples/kitchen_scene.jpg)
 
@@ -185,19 +235,6 @@ Output:
   - (microwave, on, counter)
   - (sink, in, counter)
   - (oven, next to, refrigerator)
-
-### Example 2: Outdoor Scene
-
-![Outdoor Scene](examples/outdoor_scene.jpg)
-
-Input: An image of a park with people and animals.
-
-Output:
-- Detected objects: person, dog, tree, bench, bicycle
-- Extracted relationships:
-  - (person, sitting on, bench)
-  - (dog, near, person)
-  - (bicycle, leaning against, tree)
 
 ## Troubleshooting
 
