@@ -1,0 +1,104 @@
+{
+  "nodes": [
+    {
+      "id": "Scene",
+      "type": "root",
+      "caption": "a city street with cars parked on the side describe the relationships between objects in this image. street, melbourne, australia"
+    },
+    {
+      "id": "obj_0",
+      "type": "object",
+      "class_label": "car",
+      "bbox": [
+        20.894163131713867,
+        373.03900146484375,
+        423.89630126953125,
+        624.3501586914062
+      ],
+      "confidence": 0.7969704270362854
+    },
+    {
+      "id": "obj_1",
+      "type": "object",
+      "class_label": "car",
+      "bbox": [
+        371.7186279296875,
+        412.7332458496094,
+        490.6575012207031,
+        585.1445922851562
+      ],
+      "confidence": 0.732710599899292
+    },
+    {
+      "id": "obj_2",
+      "type": "object",
+      "class_label": "car",
+      "bbox": [
+        694.0932006835938,
+        415.16943359375,
+        745.1292114257812,
+        460.6854248046875
+      ],
+      "confidence": 0.6838291883468628
+    }
+  ],
+  "edges": [
+    {
+      "source": "Scene",
+      "target": "obj_0",
+      "relation": "contains"
+    },
+    {
+      "source": "Scene",
+      "target": "obj_1",
+      "relation": "contains"
+    },
+    {
+      "source": "Scene",
+      "target": "obj_2",
+      "relation": "contains"
+    },
+    {
+      "source": "obj_0",
+      "target": "obj_0",
+      "relation": "near",
+      "confidence": 0.7
+    },
+    {
+      "source": "obj_0",
+      "target": "obj_1",
+      "relation": "above",
+      "confidence": 0.7
+    },
+    {
+      "source": "obj_0",
+      "target": "obj_2",
+      "relation": "left of",
+      "confidence": 0.7
+    },
+    {
+      "source": "obj_1",
+      "target": "obj_0",
+      "relation": "below",
+      "confidence": 0.7
+    },
+    {
+      "source": "obj_1",
+      "target": "obj_2",
+      "relation": "left of",
+      "confidence": 0.7
+    },
+    {
+      "source": "obj_2",
+      "target": "obj_0",
+      "relation": "right of",
+      "confidence": 0.7
+    },
+    {
+      "source": "obj_2",
+      "target": "obj_1",
+      "relation": "right of",
+      "confidence": 0.7
+    }
+  ]
+}

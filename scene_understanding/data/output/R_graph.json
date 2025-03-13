@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "id": "Scene",
+      "type": "root",
+      "caption": "a bedroom with a large bed and a tv describe the relationships between objects in this image.s"
+    },
+    {
+      "id": "obj_0",
+      "type": "object",
+      "class_label": "chair",
+      "bbox": [
+        1008.7057495117188,
+        440.1911926269531,
+        1227.624267578125,
+        692.5130004882812
+      ],
+      "confidence": 0.8813376426696777
+    },
+    {
+      "id": "obj_1",
+      "type": "object",
+      "class_label": "bed",
+      "bbox": [
+        226.64370727539062,
+        400.78680419921875,
+        935.7742309570312,
+        943.5234985351562
+      ],
+      "confidence": 0.788848340511322
+    }
+  ],
+  "edges": [
+    {
+      "source": "Scene",
+      "target": "obj_0",
+      "relation": "contains"
+    },
+    {
+      "source": "Scene",
+      "target": "obj_1",
+      "relation": "contains"
+    },
+    {
+      "source": "obj_0",
+      "target": "obj_1",
+      "relation": "near",
+      "confidence": 0.7
+    },
+    {
+      "source": "obj_1",
+      "target": "obj_0",
+      "relation": "left of",
+      "confidence": 0.7
+    }
+  ]
+}
